@@ -5,6 +5,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
 # NLTK data download (first time only)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('punkt', quiet=True)
+nltk.download('stopwords', quiet=True)
+
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
